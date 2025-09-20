@@ -1,1 +1,70 @@
-<!doctype html><html><head><title>Case study 5</title></head><body><h1>Case Study 5</h1></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Case study - Data center consolidation and virtualization</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container row">
+      <div class="brand"><a href="/">Nima Oghanian</a></div>
+      <nav class="nav">
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#projects">Case studies</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="kicker">Case study</div>
+        <h1>Data center consolidation and virtualization</h1>
+        <p class="small">Industry: Transportation and Logistics · Infrastructure: 50+ servers</p>
+        <p class="small" style="margin-top:8px;color:#2d3848"><em>Client name withheld for confidentiality.</em></p>
+        <div class="two-col" style="margin-top:24px">
+          <div class="card">
+            <h3>Challenge</h3>
+            <p>Dozens of physical servers ran across several branch offices. Hardware was aging, costs were high, and there was no clear disaster recovery plan.</p>
+          </div>
+          <div class="card">
+            <h3>Approach</h3>
+            <ul class="checklist">
+              <li>Cataloged servers and mapped key dependencies</li>
+              <li>Designed a VMware cluster for resilient hosting</li>
+              <li>Introduced shared storage with replication between two sites</li>
+              <li>Planned phased migrations to keep downtime low</li>
+            </ul>
+          </div>
+        </div>
+        <div class="two-col" style="margin-top:20px">
+          <div class="card">
+            <h3>Outcomes</h3>
+            <ul class="checklist">
+              <li>Physical server count reduced by more than 70 percent</li>
+              <li>Fewer downtime incidents after consolidation</li>
+              <li>Annual operating costs dropped by about a quarter</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>What made it work</h3>
+            <p>Keep changes small and steady, document clearly, and sequence major steps around business milestones.</p>
+          </div>
+        </div>
+        <p style="margin-top:16px"><a href="index.html">Back to home</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="y"></span> Nima Oghanian · Built with care</p>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

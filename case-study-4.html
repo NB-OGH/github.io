@@ -1,1 +1,70 @@
-<!doctype html><html><head><title>Case study 4</title></head><body><h1>Case Study 4</h1></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Case study - Backup and recovery simplification</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container row">
+      <div class="brand"><a href="/">Nima Oghanian</a></div>
+      <nav class="nav">
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#projects">Case studies</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="kicker">Case study</div>
+        <h1>Backup and recovery simplification</h1>
+        <p class="small">Industry: Healthcare · Workloads: On premises apps and Microsoft 365</p>
+        <p class="small" style="margin-top:8px;color:#2d3848"><em>Client name withheld for confidentiality.</em></p>
+        <div class="two-col" style="margin-top:24px">
+          <div class="card">
+            <h3>Challenge</h3>
+            <p>Backups were inconsistent. Microsoft 365 had no extra protection and server backups were managed by outdated software that required manual checks.</p>
+          </div>
+          <div class="card">
+            <h3>Approach</h3>
+            <ul class="checklist">
+              <li>Agreed on what is critical with business and compliance teams</li>
+              <li>Protected Exchange, OneDrive, SharePoint, and Teams with a cloud backup service</li>
+              <li>Standardized server backups with a tool that has central monitoring</li>
+              <li>Scheduled test restores to validate recovery times</li>
+            </ul>
+          </div>
+        </div>
+        <div class="two-col" style="margin-top:20px">
+          <div class="card">
+            <h3>Outcomes</h3>
+            <ul class="checklist">
+              <li>All critical workloads backed up daily with oversight in one dashboard</li>
+              <li>Tested recovery times dropped from more than a day to a few hours</li>
+              <li>Passed the next compliance review without major findings</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>What made it work</h3>
+            <p>Keep changes small and steady, document clearly, and sequence major steps around business milestones.</p>
+          </div>
+        </div>
+        <p style="margin-top:16px"><a href="index.html">Back to home</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="y"></span> Nima Oghanian · Built with care</p>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
