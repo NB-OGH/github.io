@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,7 +11,10 @@
   <header class="site-header">
     <div class="container row">
       <div class="brand"><a href="/">Nima Oghanian</a></div>
-      <nav class="nav">
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+        <span class="menu-lines"></span>
+      </button>
+      <nav class="nav" id="primaryNav">
         <a href="index.html#about">About</a>
         <a href="index.html#services">Services</a>
         <a href="index.html#projects">Case studies</a>
@@ -25,7 +29,7 @@
         <h1>Backup and recovery simplification</h1>
         <p class="small">Industry: Healthcare · Workloads: On premises apps and Microsoft 365</p>
         <p class="small" style="margin-top:8px;color:#2d3848"><em>Healthcare client, name withheld</em></p>
-        <div class="two-col" style="margin-top:24px">
+        <div class="two-col" style="margin-top:24px;display:grid;grid-template-columns:1.1fr .9fr;gap:24px">
           <div class="card">
             <h3>Challenge</h3>
             <p>Backups were inconsistent. Microsoft 365 had no extra protection and server backups were managed by outdated software that required manual checks.</p>
@@ -40,7 +44,7 @@
             </ul>
           </div>
         </div>
-        <div class="two-col" style="margin-top:20px">
+        <div class="two-col" style="margin-top:20px;display:grid;grid-template-columns:1.1fr .9fr;gap:24px">
           <div class="card">
             <h3>Outcomes</h3>
             <ul class="checklist">
@@ -60,9 +64,26 @@
   </main>
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="y"></span> Nima Oghanian · Built with care</p>
+      <p>© <span id="y"></span> Nima Oghanian · Strategic IT Advisor · Built with intent</p>
     </div>
   </footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <button id="toTop" aria-label="Back to top">↑</button>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const toTop = document.getElementById('toTop');
+    window.addEventListener('scroll', () => {
+      toTop.classList.toggle('show', window.scrollY > 400);
+    });
+    toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.getElementById('primaryNav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', e => {
+      if(e.target.tagName === 'A'){ nav.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); }
+    });
+  </script>
 </body>
 </html>

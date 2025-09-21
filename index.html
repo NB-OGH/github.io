@@ -12,7 +12,12 @@
   <header class="site-header">
     <div class="container row">
       <div class="brand"><a href="/">Nima Oghanian</a></div>
-      <nav class="nav">
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+        <span class="menu-lines"></span>
+      </button>
+
+      <nav class="nav" id="primaryNav">
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#projects">Case studies</a>
@@ -30,10 +35,10 @@
             <h1>Strategic IT Advisor helping SMBs thrive with secure and scalable technology.</h1>
             <p class="lead">I help small and mid-size businesses turn messy IT into predictable, business driving systems. Cloud strategy, security, and practical roadmaps that deliver results.</p>
             <div class="tags">
-              <span class="tag">Strategic IT roadmaps</span>
-              <span class="tag">Cloud & hybrid infrastructure</span>
-              <span class="tag">Security & compliance enablement</span>
-              <span class="tag">Client strategy & vCIO leadership</span>
+              <span class="tag">Strategic IT Roadmaps</span>
+              <span class="tag">Cloud & Hybrid Infrastructure</span>
+              <span class="tag">Security & Compliance</span>
+              <span class="tag">Client Strategy & vCIO</span>
             </div>
             <div class="cta">
               <a class="button" href="mailto:info@nimaoghanian.com">Start a conversation</a>
@@ -62,18 +67,18 @@
       <div class="container">
         <h2>Services</h2>
         <div class="grid-3">
-          <div class="card">
+          <a class="card card-link" href="#services">
             <h3>Advisory and vCIO</h3>
             <p>Strategic planning, quarterly roadmaps, budgeting and vendor alignment so IT supports business goals.</p>
-          </div>
-          <div class="card">
+          </a>
+          <a class="card card-link" href="#services">
             <h3>Cloud and Modern Workplace</h3>
             <p>Azure and Microsoft 365 migrations, licensing optimization, and lifecycle governance.</p>
-          </div>
-          <div class="card">
+          </a>
+          <a class="card card-link" href="#services">
             <h3>Security baseline</h3>
             <p>Practical hardening, conditional access and MFA, prioritized remediation plans.</p>
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -126,10 +131,28 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="y"></span> Nima Oghanian · Built with care</p>
+      <p>© <span id="y"></span> Nima Oghanian · Strategic IT Advisor · Built with intent</p>
     </div>
   </footer>
 
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <button id="toTop" aria-label="Back to top">↑</button>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const toTop = document.getElementById('toTop');
+    window.addEventListener('scroll', () => {
+      toTop.classList.toggle('show', window.scrollY > 400);
+    });
+    toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.getElementById('primaryNav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', e => {
+      if(e.target.tagName === 'A'){ nav.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); }
+    });
+  </script>
 </body>
 </html>

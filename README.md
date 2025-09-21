@@ -1,7 +1,10 @@
-# Nima — Site v3 (clickable tiles, avatar, refined copy)
-- Hero badges replaced with capability tags
-- Avatar added in circular frame
-- CTAs updated
-- About line revised: "Want my full resume? Request a copy"
-- Case study tiles are fully clickable
-- Softer confidentiality phrasing per page; removed from tiles
+# Nima — Site v3.1 (accent + mobile polish)
+- Teal accent highlights on headings and hover states
+- Hamburger menu on mobile
+- Back-to-top button
+- Clickable case-study tiles
+- Avatar hero with subtle hover
+- Mobile layout and type refinements
+
+Generated on 2025-09-21.
+Upload contents to your `<username>.github.io` repo root.
