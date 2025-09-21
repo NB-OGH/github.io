@@ -13,6 +13,7 @@
   <header class="site-header">
     <div class="container row">
       <div class="brand"><a href="/">Nima Oghanian</a></div>
+      <button id="menuBtn" class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
       <nav class="nav">
         <a href="#about">About</a>
         <a href="#services">Services</a>
@@ -127,5 +128,18 @@
   </footer>
 
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+<script>
+  (function(){
+    var btn = document.getElementById('menuBtn');
+    if(btn){
+      btn.addEventListener('click', function(){
+        var open = document.body.classList.toggle('nav-open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+  })();
+</script>
 </body>
+
 </html>
