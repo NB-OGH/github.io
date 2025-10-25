@@ -148,10 +148,10 @@ a:focus-visible, button:focus-visible{
   align-items:start;
 }
 .contact-lead{ padding-top: var(--space-2); }
-.form-wrap{ width:100%; max-width:720px; overflow:hidden; }
+.form-wrap{ width:100%; max-width:720px; }
 .form-wrap iframe{
   width:100%;
-  height: clamp(900px, 95vh, 1200px);
+  height: clamp(1024px, 120vh, 1400px);
   border:none;
   border-radius: var(--radius);
   background:#fff;
