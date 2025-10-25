@@ -1,0 +1,9 @@
+# commit: Restore depth, spacing, and section accents
+# pr_title: Reintroduce contrast and rhythm across sections
+# pr_body: ## Summary
+# pr_body: - increase section spacing and apply alternating backgrounds with accented headings for clearer hierarchy
+# pr_body: - darken body text, center about copy, and reinforce card depth with stronger shadow
+# pr_body: - maintain teal accent on interactions while preserving accessibility and responsiveness
+# pr_body:
+# pr_body: ## Testing
+# pr_body: - Not run (static site)
