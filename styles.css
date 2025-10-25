@@ -6,11 +6,16 @@
   --fg-muted:#4b5563;
   --bg:#ffffff;
   --bg-section:#f2f4f7;
+  --ink:#0c0d0e;
+  --muted:#f5f6f8;
+  --brand:#0B2948;
+  --accent:#14b8a6;
   --card:#ffffff;
   --card-shadow:0 1px 2px rgba(16,24,40,.06), 0 1px 1px rgba(16,24,40,.04);
   --ring:#e5e7eb;
   --radius: 12px;
   --radius-2xl: 1rem;
+  --shadow:0 10px 30px rgba(0,0,0,.08);
   --container: 1100px;
   --space-1: 8px;
   --space-2: 12px;
