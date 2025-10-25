@@ -148,16 +148,15 @@ a:focus-visible, button:focus-visible{
   align-items:start;
 }
 .contact-lead{ padding-top: var(--space-2); }
-.form-wrap{ width:100%; max-width:720px; }
+.form-wrap{ width:100%; max-width:720px; overflow:hidden; }
 .form-wrap iframe{
   width:100%;
-  height: min(78vh, 760px);
+  height: clamp(900px, 95vh, 1200px);
   border:none;
   border-radius: var(--radius);
   background:#fff;
   box-shadow:0 2px 16px rgba(0,0,0,.06);
 }
-.form-note{ font-size:.9rem; margin-top: var(--space-2); }
 @media (max-width:1000px){
   .contact-grid{ grid-template-columns:1fr; }
   .form-wrap{ max-width:100%; }
