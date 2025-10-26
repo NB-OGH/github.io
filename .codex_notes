@@ -1,0 +1,3 @@
+# commit: Make Services true flip-cards: accessible hover/focus flip, reduced-motion fallback, responsive grid
+# pr_title: Convert Services to accessible flip-cards
+# pr_body: Replaces static tiles with 3D flip-cards (front summary, back details). Works on hover and keyboard focus, includes reduced-motion fallback, and keeps 3/2/1 responsive grid.
