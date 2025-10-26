@@ -1,0 +1,8 @@
+# commit: Fix LinkedIn badge initialization and visibility
+# pr_title: Ensure LinkedIn badge renders correctly on desktop
+# pr_body: ## Summary
+# pr_body: - move the LinkedIn badge script alongside the badge markup so it initializes reliably
+# pr_body: - adjust desktop visibility styles so the badge loads fully while remaining hidden on smaller screens
+# pr_body:
+# pr_body: ## Testing
+# pr_body: - Not run (static site)
