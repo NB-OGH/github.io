@@ -1,3 +1,8 @@
-# commit: Fix Services flip-cards toggling on mobile: route taps to <summary>, scope hover to hover devices
-# pr_title: Flip-cards: reliable mobile toggle
-# pr_body: Prevents faces from intercepting taps by disabling pointer events on front/back faces and limits :hover flipping to hover-capable devices, so the same tap/click toggles cards open and closed.
+# commit: Contact section cleanup + desktop-only LinkedIn badge
+# pr_title: Reduce Contact whitespace and add LinkedIn badge (desktop)
+# pr_body: ## Summary
+# pr_body: - tighten Contact section spacing and remove extra embed bottom margin for a shorter fold
+# pr_body: - add a desktop-only LinkedIn badge alongside the contact copy for additional social proof
+# pr_body:
+# pr_body: ## Testing
+# pr_body: - Not run (static site)
