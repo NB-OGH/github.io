@@ -160,18 +160,31 @@ a:focus-visible, button:focus-visible{
 
 .card.card-3d{ perspective:1200px; border-radius:var(--radius-2xl); padding:0; background:transparent; border:none; box-shadow:none; display:block; }
 .card.card-3d::before{ left:0; right:0; }
-.card-3d .card-summary{ list-style:none; cursor:pointer; display:block; outline:none; margin:0; }
+.card-3d .card-summary{
+  list-style:none;
+  cursor:pointer;
+  display:block;
+  outline:none;
+  margin:0;
+  user-select:none;
+  -webkit-tap-highlight-color:transparent;
+}
 .card-3d .card-summary::-webkit-details-marker{ display:none; }
 .card-3d .card-summary::marker{ display:none; }
 .card-3d .card-inner{ position:relative; transform-style:preserve-3d; transition:transform .5s ease; border-radius:var(--radius-2xl); }
 .card-3d .card-face{ position:relative; background:var(--card); border-radius:var(--radius-2xl); box-shadow:var(--card-shadow); border:1px solid rgba(15,23,42,.06); padding:var(--space-5); min-height:220px; backface-visibility:hidden; display:flex; flex-direction:column; justify-content:center; }
+.card-3d .card-face,
+.card-3d .card-face *{ pointer-events:none; }
 .card-3d .card-front{ transform:rotateY(0); }
 .card-3d .card-back{ position:absolute; inset:0; transform:rotateY(180deg); }
 .card-3d h3{ color:var(--fg-strong); margin-bottom:var(--space-3); }
 .card-3d p,.card-3d li{ color:var(--fg); }
-.card.card-3d:hover .card-inner,
 .card.card-3d[open] .card-inner{ transform:rotateY(180deg); }
 .card-3d .card-summary:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; }
+
+@media (hover: hover){
+  .card.card-3d:hover .card-inner{ transform:rotateY(180deg); }
+}
 
 @media (hover: none){
   .card-3d .card-face{ min-height:240px; }
