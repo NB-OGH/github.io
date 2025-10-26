@@ -137,6 +137,10 @@ a:focus-visible, button:focus-visible{
 
 /* Cards & Grid */
 .grid-3{ display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: clamp(20px, 4vw, 32px); }
+.grid-services{ grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+@media (min-width: 1024px){
+  .grid-services{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
 .card{ position:relative; display:flex; flex-direction:column; min-height:220px; padding: var(--space-5); border-radius: var(--radius-2xl); background:#fff; box-shadow:0 4px 20px rgba(0,0,0,0.08); color:inherit; text-decoration:none; transition:transform .2s ease, box-shadow .2s ease; border:1px solid rgba(15,23,42,.04); overflow:hidden; }
 .card::before{ content:""; position:absolute; inset:0 0 auto 0; height:4px; background:var(--accent); opacity:.8; border-radius:var(--radius-2xl) var(--radius-2xl) 0 0; }
 .card h3{ margin-bottom: var(--space-3); color:var(--fg-strong); }
