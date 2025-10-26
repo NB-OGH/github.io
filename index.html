@@ -6,15 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nima Oghanian — Strategic IT Advisor</title>
   <meta name="description" content="Strategic IT advisor focused on cloud architecture, security, and practical roadmaps for SMBs. Toronto-based.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="styles.css" />
+  <!-- Social/SEO cards -->
+  <meta property="og:title" content="Nima Oghanian — Strategic IT Advisor">
+  <meta property="og:description" content="Secure, scalable, practical IT roadmaps for SMBs.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nimaoghanian.com">
+  <meta property="og:image" content="https://nimaoghanian.com/assets/social-card.png">
+  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
   <header class="site-header">
-    <div class="container row">
+    <div class="container">
       <div class="brand"><a href="/">Nima Oghanian</a></div>
-      <button id="menuBtn" class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
-      <nav class="nav">
+      <button id="menuBtn" class="menu-btn" type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="site-nav">☰</button>
+      <nav id="site-nav" class="nav">
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#projects">Case studies</a>
@@ -25,59 +37,100 @@
 
   <main id="main">
     <section class="hero section">
-  <p class="mini-tagline">Security &amp; Compliance · Client Strategy &amp; Roadmaps · Cloud &amp; Hybrid Infrastructure</p>
-
       <div class="container">
-        <div class="grid">
-          <div>
-            <div class="kicker">AZURE · M365 · SECURITY</div>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">SECURITY &amp; COMPLIANCE · CLIENT STRATEGY &amp; ROADMAPS · CLOUD &amp; HYBRID INFRASTRUCTURE · PROFESSIONAL SERVICES</p>
             <h1>Strategic IT Advisor helping SMBs thrive with secure and scalable technology.</h1>
-            <p class="lead">I help small and mid-size businesses turn messy IT into predictable, business driving systems. Cloud strategy, security, and practical roadmaps that deliver results.</p><div class="cta">
-              <a class="button" href="mailto:info@nimaoghanian.com">Start a conversation</a>
-              <a class="button ghost" href="https://www.linkedin.com/in/nimaoghanian">View my LinkedIn</a>
+            <p>I help small and mid-size businesses turn messy IT into predictable, business-driving systems. Cloud strategy, security, and practical roadmaps that deliver results.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact">Start a conversation</a>
+              <a class="btn btn-ghost" href="https://www.linkedin.com/in/nimaoghanian/" rel="noopener">View my LinkedIn</a>
             </div>
           </div>
-          <div class="hero-visual">
-            <div class="avatar-wrap">
-              <img src="assets/avatar.png" alt="Portrait of Nima Oghanian">
-            </div>
+          <div class="hero-aside">
+            <img src="assets/avatar.png" width="256" height="256" alt="Portrait of Nima Oghanian" loading="lazy" decoding="async">
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section">
+    <section id="about" class="section about">
       <div class="container">
         <h2>About</h2>
         <p>I am a Client Strategy Advisor and cloud and IT systems pro who designs secure and practical technology roadmaps for growing businesses. I blend hands on engineering with client first strategy. Clear recommendations, realistic timelines, and operational handoffs that stick.</p>
         <p>My work sits at the intersection of strategy and delivery. I have helped organizations modernize cloud estates, reduce operational friction, and put security and governance in place that enable growth rather than block it.</p>
-        <p class="small">Want my full resume? <a href="mailto:info@nimaoghanian.com?subject=Request%20CV">Request a copy</a> · <a href="https://www.linkedin.com/in/nimaoghanian">LinkedIn</a></p>
+        <p class="small">Want my full resume? <a href="#contact">Request a copy via the contact form</a> · <a href="https://www.linkedin.com/in/nimaoghanian">LinkedIn</a></p>
       </div>
     </section>
 
-    <section id="services" class="section muted">
+    <section id="services" class="section section-alt">
       <div class="container">
-        <h2>Services</h2>
-        <div class="grid-3">
-          <div class="card">
-            <h3>Advisory and vCIO</h3>
-            <p>Strategic planning, quarterly roadmaps, budgeting and vendor alignment so IT supports business goals.</p>
-          </div>
-          <div class="card">
-            <h3>Cloud and Modern Workplace</h3>
-            <p>Azure and Microsoft 365 migrations, licensing optimization, and lifecycle governance.</p>
-          </div>
-          <div class="card">
-            <h3>Security baseline</h3>
-            <p>Practical hardening, conditional access and MFA, prioritized remediation plans.</p>
-          </div>
+        <h2 class="section-title">Services</h2>
+        <div class="grid-3 services-grid">
+          <details class="card card-3d" aria-label="Advisory and vCIO" role="group">
+            <summary class="card-summary">
+              <div class="card-inner">
+                <div class="card-face card-front">
+                  <h3>Advisory and vCIO</h3>
+                  <p>Strategic leadership for your IT roadmap. I define priorities, budgets, and vendor plans so technology supports the business.</p>
+                </div>
+                <div class="card-face card-back" aria-hidden="true">
+                  <ul>
+                    <li>Quarterly roadmaps &amp; budgets</li>
+                    <li>Vendor reviews and RFPs</li>
+                    <li>KPI dashboards for leadership</li>
+                    <li>Change management with teams</li>
+                  </ul>
+                </div>
+              </div>
+            </summary>
+          </details>
+
+          <details class="card card-3d" aria-label="Security and Compliance" role="group">
+            <summary class="card-summary">
+              <div class="card-inner">
+                <div class="card-face card-front">
+                  <h3>Security and Compliance</h3>
+                  <p>Practical security and governance. Policies, controls, and audits that protect data without slowing the business.</p>
+                </div>
+                <div class="card-face card-back" aria-hidden="true">
+                  <ul>
+                    <li>MFA &amp; Conditional Access</li>
+                    <li>Endpoint baselines and hardening (CIS)</li>
+                    <li>Incident readiness &amp; reviews</li>
+                    <li>ISO 27001-aligned policy work</li>
+                  </ul>
+                </div>
+              </div>
+            </summary>
+          </details>
+
+          <details class="card card-3d" aria-label="Modern Workplace Delivery" role="group">
+            <summary class="card-summary">
+              <div class="card-inner">
+                <div class="card-face card-front">
+                  <h3>Modern Workplace Delivery</h3>
+                  <p>Hands-on cloud projects delivered right. Microsoft 365, Azure, and Intune implementations that stick.</p>
+                </div>
+                <div class="card-face card-back" aria-hidden="true">
+                  <ul>
+                    <li>M365 &amp; email migrations</li>
+                    <li>Intune device management</li>
+                    <li>Identity &amp; access (Entra)</li>
+                    <li>SharePoint/OneDrive rollouts</li>
+                  </ul>
+                </div>
+              </div>
+            </summary>
+          </details>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="projects" class="section section-alt case-studies">
       <div class="container">
-        <h2>Case studies</h2>
+        <h2 class="section-title">Case studies</h2>
         <div class="grid-3">
           <a class="card card-link" href="case-study-1.html">
             <h3>Infrastructure refresh and operations</h3>
@@ -109,17 +162,39 @@
       </div>
     </section>
 
-    <section id="contact" class="section muted">
-    <h2>Get in touch</h2>
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSelULsvhSTl9UR4enh9ESTDJWGuPU_ZNO9ECFhDP4niKGW56A/viewform?embedded=true"
-        width="100%"
-        height="720"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-        loading="lazy"
-        >Loading…</iframe>
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="contact-grid">
+          <header class="contact-lead">
+            <h2 class="h2 section-title">Get in touch</h2>
+            <p class="muted">Tell me briefly about your goals and timeline. I’ll reply within 1–2 business days.</p>
+            <!-- Desktop-only LinkedIn badge -->
+            <div class="contact-badge" aria-label="LinkedIn profile badge">
+              <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+              <div class="badge-base LI-profile-badge"
+                   data-locale="en_US"
+                   data-size="large"
+                   data-theme="light"
+                   data-type="HORIZONTAL"
+                   data-vanity="nimaoghanian"
+                   data-version="v1">
+                <a class="badge-base__link LI-simple-link" href="https://ca.linkedin.com/in/nimaoghanian?trk=profile-badge">Nima O.</a>
+              </div>
+            </div>
+          </header>
+          <div class="form-wrap">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSelULsvhSTl9UR4enh9ESTDJWGuPU_ZNO9ECFhDP4niKGW56A/viewform?embedded=true&rm=minimal"
+              title="Contact form"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              scrolling="no"
+              allowfullscreen>
+            </iframe>
+            <!-- Form accent color can be updated directly in Google Forms to match site branding. -->
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -135,10 +210,25 @@
   (function(){
     var btn = document.getElementById('menuBtn');
     if(btn){
+      var nav = document.getElementById('site-nav');
+      var updateLabel = function(open){
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      };
+
       btn.addEventListener('click', function(){
         var open = document.body.classList.toggle('nav-open');
-        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        updateLabel(open);
       });
+
+      if(nav){
+        nav.addEventListener('click', function(event){
+          if(event.target.tagName === 'A'){
+            document.body.classList.remove('nav-open');
+            updateLabel(false);
+          }
+        });
+      }
     }
   })();
 </script>
