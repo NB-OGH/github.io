@@ -1,0 +1,3 @@
+# commit: Fix Services flip-cards toggling on mobile: route taps to <summary>, scope hover to hover devices
+# pr_title: Flip-cards: reliable mobile toggle
+# pr_body: Prevents faces from intercepting taps by disabling pointer events on front/back faces and limits :hover flipping to hover-capable devices, so the same tap/click toggles cards open and closed.
