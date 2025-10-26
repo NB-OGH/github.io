@@ -315,22 +315,17 @@ section#contact{
 }
 
 /* ===== LinkedIn badge visibility ===== */
-.contact-badge{
-  display:block;
-  margin-top: var(--space-5);
-}
+.contact-badge{ display:none; }
 .contact-badge .badge-base{
   max-width: 420px;
   width: 100%;
-}
-@media (max-width: 1023px){
-  .contact-badge{ display:none; }
 }
 @media (min-width: 1024px){
   .contact-badge{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: var(--space-5);
     padding: var(--space-4);
     background: var(--card);
     border-radius: var(--radius-2xl);
