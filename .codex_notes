@@ -1,8 +1,8 @@
-# commit: Contact section cleanup + desktop-only LinkedIn badge
-# pr_title: Reduce Contact whitespace and add LinkedIn badge (desktop)
+# commit: Tune contact form height to trim excess whitespace
+# pr_title: Adjust contact form embed spacing
 # pr_body: ## Summary
-# pr_body: - tighten Contact section spacing and remove extra embed bottom margin for a shorter fold
-# pr_body: - add a desktop-only LinkedIn badge alongside the contact copy for additional social proof
+# pr_body: - lower the embedded Google Form height so the footer whitespace is eliminated
+# pr_body: - add a mobile-specific height cap to keep the submit button visible without extra scrolling
 # pr_body:
 # pr_body: ## Testing
 # pr_body: - Not run (static site)
