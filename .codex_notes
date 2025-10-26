@@ -1,3 +1,3 @@
-# commit: Services refactor: 3 accessible flip-cards + mobile-friendly layout and updated copy
-# pr_title: Refactor Services to 3 accessible flip-cards
-# pr_body: Consolidates Services into Advisory and vCIO, Security and Compliance, and Modern Workplace Delivery. Adds accessible flip-on-hover/focus cards with reduced-motion fallback and responsive 3/2/1 grid.
+# commit: Make Services true flip-cards: accessible hover/focus flip, reduced-motion fallback, responsive grid
+# pr_title: Convert Services to accessible flip-cards
+# pr_body: Replaces static tiles with 3D flip-cards (front summary, back details). Works on hover and keyboard focus, includes reduced-motion fallback, and keeps 3/2/1 responsive grid.
