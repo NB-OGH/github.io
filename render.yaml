@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: bvls-worldmeet-dashboard
+    runtime: docker
+    plan: starter
+    rootDir: bvls-dashboard
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /_stcore/health
+    envVars:
+      - key: DATA_DIR
+        value: /data/bvls_worldmeet_results
+      - key: SHOPIFY_SHOP_DOMAIN
+        value: bearded-villains-lakeshore.myshopify.com
+      - key: SINCE_DATE
+        value: 2026-01-01
+      - key: EXPECTED_ADULT_PACKAGES
+        value: "114"
+      - key: SHOPIFY_CLIENT_ID
+        sync: false
+      - key: SHOPIFY_CLIENT_SECRET
+        sync: false
+      - key: DASHBOARD_PASSWORD
+        generateValue: true
+    disk:
+      name: bvls-dashboard-data
+      mountPath: /data
+      sizeGB: 1
